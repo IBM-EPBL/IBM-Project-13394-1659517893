@@ -1,0 +1,73 @@
+pip install -U ibm-watson-machine-learning
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Collecting ibm-watson-machine-learning
+  Downloading ibm_watson_machine_learning-1.0.257-py3-none-any.whl (1.8 MB)
+     |████████████████████████████████| 1.8 MB 24.5 MB/s 
+Requirement already satisfied: tabulate in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (0.8.10)
+Collecting lomond
+  Downloading lomond-0.3.3-py2.py3-none-any.whl (35 kB)
+Requirement already satisfied: certifi in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (2022.9.24)
+Requirement already satisfied: packaging in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (21.3)
+Requirement already satisfied: importlib-metadata in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (4.13.0)
+Requirement already satisfied: urllib3 in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (1.24.3)
+Requirement already satisfied: pandas<1.5.0,>=0.24.2 in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (1.3.5)
+Requirement already satisfied: requests in /usr/local/lib/python3.7/dist-packages (from ibm-watson-machine-learning) (2.23.0)
+Collecting ibm-cos-sdk==2.7.*
+  Downloading ibm-cos-sdk-2.7.0.tar.gz (51 kB)
+     |████████████████████████████████| 51 kB 781 kB/s 
+Collecting ibm-cos-sdk-core==2.7.0
+  Downloading ibm-cos-sdk-core-2.7.0.tar.gz (824 kB)
+     |████████████████████████████████| 824 kB 49.1 MB/s 
+Collecting ibm-cos-sdk-s3transfer==2.7.0
+  Downloading ibm-cos-sdk-s3transfer-2.7.0.tar.gz (133 kB)
+     |████████████████████████████████| 133 kB 49.8 MB/s 
+Collecting jmespath<1.0.0,>=0.7.1
+  Downloading jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting docutils<0.16,>=0.10
+  Downloading docutils-0.15.2-py3-none-any.whl (547 kB)
+     |████████████████████████████████| 547 kB 57.4 MB/s 
+Requirement already satisfied: python-dateutil<3.0.0,>=2.1 in /usr/local/lib/python3.7/dist-packages (from ibm-cos-sdk-core==2.7.0->ibm-cos-sdk==2.7.*->ibm-watson-machine-learning) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.7/dist-packages (from pandas<1.5.0,>=0.24.2->ibm-watson-machine-learning) (2022.6)
+Requirement already satisfied: numpy>=1.17.3 in /usr/local/lib/python3.7/dist-packages (from pandas<1.5.0,>=0.24.2->ibm-watson-machine-learning) (1.21.6)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.7/dist-packages (from python-dateutil<3.0.0,>=2.1->ibm-cos-sdk-core==2.7.0->ibm-cos-sdk==2.7.*->ibm-watson-machine-learning) (1.15.0)
+Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.7/dist-packages (from requests->ibm-watson-machine-learning) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.7/dist-packages (from requests->ibm-watson-machine-learning) (2.10)
+Requirement already satisfied: typing-extensions>=3.6.4 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata->ibm-watson-machine-learning) (4.1.1)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.7/dist-packages (from importlib-metadata->ibm-watson-machine-learning) (3.10.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.7/dist-packages (from packaging->ibm-watson-machine-learning) (3.0.9)
+Building wheels for collected packages: ibm-cos-sdk, ibm-cos-sdk-core, ibm-cos-sdk-s3transfer
+  Building wheel for ibm-cos-sdk (setup.py) ... done
+  Created wheel for ibm-cos-sdk: filename=ibm_cos_sdk-2.7.0-py2.py3-none-any.whl size=72563 sha256=883b05f835be8ee4004f69f6a05502809448e59f14d5d30fda5405571d16d2ce
+  Stored in directory: /root/.cache/pip/wheels/47/22/bf/e1154ff0f5de93cc477acd0ca69abfbb8b799c5b28a66b44c2
+  Building wheel for ibm-cos-sdk-core (setup.py) ... done
+  Created wheel for ibm-cos-sdk-core: filename=ibm_cos_sdk_core-2.7.0-py2.py3-none-any.whl size=501013 sha256=358c9e29e3634b4cc53adfc61ea8db4100cef06de0a1e9a4f386bfa72efdb33f
+  Stored in directory: /root/.cache/pip/wheels/6c/a2/e4/c16d02f809a3ea998e17cfd02c13369281f3d232aaf5902c19
+  Building wheel for ibm-cos-sdk-s3transfer (setup.py) ... done
+  Created wheel for ibm-cos-sdk-s3transfer: filename=ibm_cos_sdk_s3transfer-2.7.0-py2.py3-none-any.whl size=88622 sha256=b06d89b1e14e0bb09a7045eec977eb02d8db7fb833d0e8884640f3ef6d383867
+  Stored in directory: /root/.cache/pip/wheels/5f/b7/14/fbe02bc1ef1af890650c7e51743d1c83890852e598d164b9da
+Successfully built ibm-cos-sdk ibm-cos-sdk-core ibm-cos-sdk-s3transfer
+Installing collected packages: jmespath, docutils, ibm-cos-sdk-core, ibm-cos-sdk-s3transfer, lomond, ibm-cos-sdk, ibm-watson-machine-learning
+  Attempting uninstall: docutils
+    Found existing installation: docutils 0.17.1
+    Uninstalling docutils-0.17.1:
+      Successfully uninstalled docutils-0.17.1
+Successfully installed docutils-0.15.2 ibm-cos-sdk-2.7.0 ibm-cos-sdk-core-2.7.0 ibm-cos-sdk-s3transfer-2.7.0 ibm-watson-machine-learning-1.0.257 jmespath-0.10.0 lomond-0.3.3
+from ibm_watson_machine_learning import APIClient
+wml_credentials = {
+	"url": "https://us-south.ml.cloud.ibm.com",
+	"apikey": "mNVF7E95G-awR213njShj1GiUfN-1SpPq-ko8Wx7na1-"
+}
+
+client = APIClient(wml_credentials)
+Python 3.7 and 3.8 frameworks are deprecated and will be removed in a future release. Use Python 3.9 framework instead.
+def guid_from_space_name(client, space_name):
+    space = client.spaces.get_details()
+    return (next(item for item in space['resources'] if item['entity']["name"] == space_name)['metadata']['id'])
+space_uid = guid_from_space_name(client, 'communication_model_deployment')
+print("Space UID : ", space_uid)
+Space UID :  21c15ae0-ee26-497d-b615-eb30ef2e16fe
+client.set.default_space(space_uid)
+'SUCCESS'
+client.repository.download("cefca265-2301-4620-897a-9c80d6ff7f1a","IBM_Model_Download.tar.gz")
+Successfully saved model content to file: 'IBM_Model_Download.tar.gz'
+'/content/IBM_Model_Download.tar.gz'
